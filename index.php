@@ -195,17 +195,17 @@
     <section class="contact" id="contact">
         <h2 class="heading">Entre em <span>Contato</span></h2>
 
-        <form action="#">
+        <form action="enviar.php" method="POST">
             <div class="input-box">
-                <input type="text" placeholder="Nome completo">
-                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Nome completo" name="nome">
+                <input type="email" placeholder="Email" name="email">
             </div>
 
             <div class="input-box">
-                <input type="number" placeholder="Numero">
-                <input type="text" placeholder="Assunto do Email">
+                <input type="number" placeholder="Celular" name="contato">
+                <input type="text" placeholder="Assunto do Email" name="assunto">
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Sua Mensagem"></textarea>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Sua Mensagem" name="mensagem"></textarea>
             <input type="submit" value="Enviar" class="btn">
         </form>
     </section>
